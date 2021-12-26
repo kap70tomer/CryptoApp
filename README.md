@@ -8,7 +8,11 @@ Build using JQuary Axios BootStrap4 GraphJS CSS JavaScript HTML.
 ## Features
 
 ~ Search and Choose up to 5 currencies to compare, from 5000+ crypro-currencies.
+
+
 ~ Get the most accurate currency trading rates in Dollar, Shekel or Euro.
+
+
 ~ Display live data market value of choosen currncies on Graph to easly compare.
 
 ## How to run the site
