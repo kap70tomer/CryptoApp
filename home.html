@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Apptimus Banners</title>
+    <!-- Import Custom Styles file. -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="loadCachedBanners()">
+    <div class="main-container">
+        <div class="s1">
+            
+            <h2>Banners Generator</h2>
+            
+            <!-- Banners Upload Form -->
+            <form class="form container" name="banner-form"
+                onsubmit="onSubmitClicked(event)">
+
+                <!-- Banners Form Fields -->
+                <div class="form-group">
+                    <label>Redirect link URL:</label>
+                    <input class="form-input" type="text" placeholder="Where do you go by Clicking?.."
+                        id="banner-redirectLink" required>
+                </div>
+                <div class="form-group">
+                    <label>Image URL:</label>
+                    <input class="form-input" type="text" placeholder="Please provide an image url.."
+                        id="banner-imgUrl" required>
+                </div>
+                <!-- Submit Form Button -->
+                <input type="submit" class="btn submit" id="submit-btn" value="Submit">
+
+            </form>
+
+            <div class="nav">
+                <button type="button" class="save-btn sticky" title="Save Your Banners Localy" value="Save"
+                onclick="saveBannersOnLocalStorage()"><img class="icon" src="./assets/save.png" alt="save-btn"></button>
+                
+                <button type="button" class="clear-btn sticky" title="Clear Banners Data" value="Clear"
+                onclick="clearBannersOnLocalStorage()"><img class="icon" src="./assets/clear.png" alt="cleare data"> </button>
+            </div>
+        </div>
+
+        
+        <div class="s2 container">
+            <h2>Banners List Display</h2>
+            
+            <div id='banners-list'>
+                <!-- Display div for Banners -->
+            </div>
+            <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+        </div>
+    </div>
+    <!-- Import of JavaSpript file -->
+    <script src="Script.js"></script>
+</body>
+
+</html>
